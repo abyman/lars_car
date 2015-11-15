@@ -3,6 +3,9 @@
 import time
 import accel
 import string
+import sys
+
+
 
 SERVO_LEFT = 2.4
 SERVO_RIGHT = 0.5
@@ -48,6 +51,7 @@ def usage():
    print(" b <speed> // motor b will turn at speed. speed is (-1:1)")
    print(" c <speed> // motor a&b will turn at speed. speed is (-1:1)")
    print(" s <pos> // servo s will turn to pos. pos is (-1:1)")
+   print(" t <delay> // servo s will turn right and then left. each step will be delayed by delay")
    print(" exit // exit this prog")
 
 s = 0
@@ -55,29 +59,60 @@ setServoAngle(s,pwm)
 setMotorSpeed(0,pwm,[0,1])      
 setMotorSpeed(0,pwm,[2,3])      
 
-run = 1
-while run:
-   raw = raw_input("% ")
-   if len(raw) == 0:
-      usage()
-   else:
-      spl = string.split(string.lower(raw))
-      if spl[0] == 'a' or spl[0] == 'b' or spl[0] == 'c' or spl[0] == 's':
-         if len(spl) < 2:
+if len(sys.argv) > 1:
+   spl = sys.argv[1:]
+   if spl[0] == 'a' or spl[0] == 'b' or spl[0] == 'c' or spl[0] == 's' or spl[0] == 't':
+      if len(spl) < 2:
+         usage()
+      else:
+         v = float(spl[1])
+         if v < -1 or v > 1:
             usage()
          else:
-            v = float(spl[1])
-            if v < -1 or v > 1:
+            if spl[0] == 'a' or spl[0] == 'c':
+               setMotorSpeed(v,pwm,[0,1])
+            if spl[0] == 'b' or spl[0] == 'c':
+               setMotorSpeed(v,pwm,[2,3])
+            if spl[0] == 's':
+               setServoAngle(v,pwm)
+            if spl[0] == 't':
+               for a in range(0,17,1):
+                  setServoAngle(a*0.01,pwm)
+                  time.sleep(v)
+               for a in range(16,-17,-1):
+                  setServoAngle(a*0.01,pwm)
+                  time.sleep(v)
+               for a in range(-16,1,1):
+                  setServoAngle(a*0.01,pwm)
+                  time.sleep(v)
+   elif spl[0] == 'exit':
+      run = 0
+   else:
+      usage()
+else:
+   run = 1
+   while run:
+      raw = raw_input("% ")
+      if len(raw) == 0:
+         usage()
+      else:
+         spl = string.split(string.lower(raw))
+         if spl[0] == 'a' or spl[0] == 'b' or spl[0] == 'c' or spl[0] == 's':
+            if len(spl) < 2:
                usage()
             else:
-               if spl[0] == 'a' or spl[0] == 'c':
-                  setMotorSpeed(v,pwm,[0,1])
-               if spl[0] == 'b' or spl[0] == 'c':
-                  setMotorSpeed(v,pwm,[2,3])
-               if spl[0] == 's':
-                  setServoAngle(v,pwm)
-      elif spl[0] == 'exit':
-         run = 0
-      else:
-         usage()
-      
+               v = float(spl[1])
+               if v < -1 or v > 1:
+                  usage()
+               else:
+                  if spl[0] == 'a' or spl[0] == 'c':
+                     setMotorSpeed(v,pwm,[0,1])
+                  if spl[0] == 'b' or spl[0] == 'c':
+                     setMotorSpeed(v,pwm,[2,3])
+                  if spl[0] == 's':
+                     setServoAngle(v,pwm)
+         elif spl[0] == 'exit':
+            run = 0
+         else:
+            usage()
+         
