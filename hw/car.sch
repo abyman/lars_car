@@ -4176,12 +4176,13 @@ W = angled&lt;p&gt;
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="LSM" library="con-molex" deviceset="22-23-2111" device=""/>
-<part name="X4" library="con-molex" deviceset="22-23-2121" device=""/>
-<part name="X5" library="con-molex" deviceset="22-23-2121" device=""/>
+<part name="SPRK_L" library="con-molex" deviceset="22-23-2121" device=""/>
+<part name="SPRK_R" library="con-molex" deviceset="22-23-2121" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
-<part name="X2" library="con-molex" deviceset="22-23-2111" device=""/>
-<part name="X6" library="con-molex" deviceset="22-23-2081" device=""/>
+<part name="OPT_R" library="con-molex" deviceset="22-23-2111" device=""/>
+<part name="OPT_L" library="con-molex" deviceset="22-23-2081" device=""/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="0204/2V" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -4240,7 +4241,7 @@ W = angled&lt;p&gt;
 <instance part="SERVO" gate="G$1" x="-15.24" y="71.12"/>
 <instance part="DRV" gate="1" x="48.26" y="45.72" rot="R180"/>
 <instance part="SUPPLY3" gate="GND" x="-7.62" y="76.2" rot="R180"/>
-<instance part="SUPPLY4" gate="GND" x="55.88" y="40.64"/>
+<instance part="SUPPLY4" gate="GND" x="40.64" y="38.1"/>
 <instance part="LSM" gate="-1" x="48.26" y="137.16"/>
 <instance part="LSM" gate="-2" x="48.26" y="134.62"/>
 <instance part="LSM" gate="-3" x="48.26" y="132.08"/>
@@ -4252,51 +4253,52 @@ W = angled&lt;p&gt;
 <instance part="LSM" gate="-9" x="48.26" y="116.84"/>
 <instance part="LSM" gate="-10" x="48.26" y="114.3"/>
 <instance part="LSM" gate="-11" x="48.26" y="111.76"/>
-<instance part="X4" gate="-1" x="-73.66" y="132.08"/>
-<instance part="X4" gate="-2" x="-73.66" y="129.54"/>
-<instance part="X4" gate="-3" x="-73.66" y="127"/>
-<instance part="X4" gate="-4" x="-73.66" y="124.46"/>
-<instance part="X4" gate="-5" x="-73.66" y="121.92"/>
-<instance part="X4" gate="-6" x="-73.66" y="119.38"/>
-<instance part="X4" gate="-7" x="-73.66" y="116.84"/>
-<instance part="X4" gate="-8" x="-73.66" y="114.3"/>
-<instance part="X4" gate="-9" x="-73.66" y="111.76"/>
-<instance part="X4" gate="-10" x="-73.66" y="109.22"/>
-<instance part="X4" gate="-11" x="-73.66" y="106.68"/>
-<instance part="X4" gate="-12" x="-73.66" y="104.14"/>
-<instance part="X5" gate="-1" x="-50.8" y="104.14" rot="R180"/>
-<instance part="X5" gate="-2" x="-50.8" y="106.68" rot="R180"/>
-<instance part="X5" gate="-3" x="-50.8" y="109.22" rot="R180"/>
-<instance part="X5" gate="-4" x="-50.8" y="111.76" rot="R180"/>
-<instance part="X5" gate="-5" x="-50.8" y="114.3" rot="R180"/>
-<instance part="X5" gate="-6" x="-50.8" y="116.84" rot="R180"/>
-<instance part="X5" gate="-7" x="-50.8" y="119.38" rot="R180"/>
-<instance part="X5" gate="-8" x="-50.8" y="121.92" rot="R180"/>
-<instance part="X5" gate="-9" x="-50.8" y="124.46" rot="R180"/>
-<instance part="X5" gate="-10" x="-50.8" y="127" rot="R180"/>
-<instance part="X5" gate="-11" x="-50.8" y="129.54" rot="R180"/>
-<instance part="X5" gate="-12" x="-50.8" y="132.08" rot="R180"/>
+<instance part="SPRK_L" gate="-1" x="-73.66" y="132.08"/>
+<instance part="SPRK_L" gate="-2" x="-73.66" y="129.54"/>
+<instance part="SPRK_L" gate="-3" x="-73.66" y="127"/>
+<instance part="SPRK_L" gate="-4" x="-73.66" y="124.46"/>
+<instance part="SPRK_L" gate="-5" x="-73.66" y="121.92"/>
+<instance part="SPRK_L" gate="-6" x="-73.66" y="119.38"/>
+<instance part="SPRK_L" gate="-7" x="-73.66" y="116.84"/>
+<instance part="SPRK_L" gate="-8" x="-73.66" y="114.3"/>
+<instance part="SPRK_L" gate="-9" x="-73.66" y="111.76"/>
+<instance part="SPRK_L" gate="-10" x="-73.66" y="109.22"/>
+<instance part="SPRK_L" gate="-11" x="-73.66" y="106.68"/>
+<instance part="SPRK_L" gate="-12" x="-73.66" y="104.14"/>
+<instance part="SPRK_R" gate="-1" x="-50.8" y="104.14" rot="R180"/>
+<instance part="SPRK_R" gate="-2" x="-50.8" y="106.68" rot="R180"/>
+<instance part="SPRK_R" gate="-3" x="-50.8" y="109.22" rot="R180"/>
+<instance part="SPRK_R" gate="-4" x="-50.8" y="111.76" rot="R180"/>
+<instance part="SPRK_R" gate="-5" x="-50.8" y="114.3" rot="R180"/>
+<instance part="SPRK_R" gate="-6" x="-50.8" y="116.84" rot="R180"/>
+<instance part="SPRK_R" gate="-7" x="-50.8" y="119.38" rot="R180"/>
+<instance part="SPRK_R" gate="-8" x="-50.8" y="121.92" rot="R180"/>
+<instance part="SPRK_R" gate="-9" x="-50.8" y="124.46" rot="R180"/>
+<instance part="SPRK_R" gate="-10" x="-50.8" y="127" rot="R180"/>
+<instance part="SPRK_R" gate="-11" x="-50.8" y="129.54" rot="R180"/>
+<instance part="SPRK_R" gate="-12" x="-50.8" y="132.08" rot="R180"/>
 <instance part="SUPPLY5" gate="GND" x="-45.72" y="132.08" rot="R90"/>
 <instance part="SUPPLY6" gate="GND" x="43.18" y="132.08" rot="R270"/>
-<instance part="X2" gate="-1" x="-38.1" y="129.54"/>
-<instance part="X2" gate="-2" x="-38.1" y="127"/>
-<instance part="X2" gate="-3" x="-38.1" y="124.46"/>
-<instance part="X2" gate="-4" x="-38.1" y="121.92"/>
-<instance part="X2" gate="-5" x="-38.1" y="119.38"/>
-<instance part="X2" gate="-6" x="-38.1" y="116.84"/>
-<instance part="X2" gate="-7" x="-38.1" y="114.3"/>
-<instance part="X2" gate="-8" x="-38.1" y="111.76"/>
-<instance part="X2" gate="-9" x="-38.1" y="109.22"/>
-<instance part="X2" gate="-10" x="-38.1" y="106.68"/>
-<instance part="X2" gate="-11" x="-38.1" y="104.14"/>
-<instance part="X6" gate="-1" x="-83.82" y="109.22" rot="R180"/>
-<instance part="X6" gate="-2" x="-83.82" y="111.76" rot="R180"/>
-<instance part="X6" gate="-3" x="-83.82" y="114.3" rot="R180"/>
-<instance part="X6" gate="-4" x="-83.82" y="116.84" rot="R180"/>
-<instance part="X6" gate="-5" x="-83.82" y="119.38" rot="R180"/>
-<instance part="X6" gate="-6" x="-83.82" y="121.92" rot="R180"/>
-<instance part="X6" gate="-7" x="-83.82" y="124.46" rot="R180"/>
-<instance part="X6" gate="-8" x="-83.82" y="127" rot="R180"/>
+<instance part="OPT_R" gate="-1" x="-38.1" y="129.54"/>
+<instance part="OPT_R" gate="-2" x="-38.1" y="127"/>
+<instance part="OPT_R" gate="-3" x="-38.1" y="124.46"/>
+<instance part="OPT_R" gate="-4" x="-38.1" y="121.92"/>
+<instance part="OPT_R" gate="-5" x="-38.1" y="119.38"/>
+<instance part="OPT_R" gate="-6" x="-38.1" y="116.84"/>
+<instance part="OPT_R" gate="-7" x="-38.1" y="114.3"/>
+<instance part="OPT_R" gate="-8" x="-38.1" y="111.76"/>
+<instance part="OPT_R" gate="-9" x="-38.1" y="109.22"/>
+<instance part="OPT_R" gate="-10" x="-38.1" y="106.68"/>
+<instance part="OPT_R" gate="-11" x="-38.1" y="104.14"/>
+<instance part="OPT_L" gate="-1" x="-83.82" y="109.22" rot="R180"/>
+<instance part="OPT_L" gate="-2" x="-83.82" y="111.76" rot="R180"/>
+<instance part="OPT_L" gate="-3" x="-83.82" y="114.3" rot="R180"/>
+<instance part="OPT_L" gate="-4" x="-83.82" y="116.84" rot="R180"/>
+<instance part="OPT_L" gate="-5" x="-83.82" y="119.38" rot="R180"/>
+<instance part="OPT_L" gate="-6" x="-83.82" y="121.92" rot="R180"/>
+<instance part="OPT_L" gate="-7" x="-83.82" y="124.46" rot="R180"/>
+<instance part="OPT_L" gate="-8" x="-83.82" y="127" rot="R180"/>
+<instance part="R1" gate="G$1" x="20.32" y="81.28" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4316,6 +4318,7 @@ W = angled&lt;p&gt;
 <pinref part="X1" gate="-3" pin="S"/>
 <junction x="20.32" y="76.2"/>
 <pinref part="X1" gate="-3" pin="S"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4367,16 +4370,17 @@ W = angled&lt;p&gt;
 <junction x="-7.62" y="73.66"/>
 </segment>
 <segment>
-<pinref part="DRV" gate="1" pin="6"/>
-<pinref part="SUPPLY4" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="X5" gate="-12" pin="S"/>
+<pinref part="SPRK_R" gate="-12" pin="S"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="LSM" gate="-3" pin="S"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
+<pinref part="DRV" gate="1" pin="5"/>
+<wire x1="40.64" y1="40.64" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -4483,16 +4487,8 @@ W = angled&lt;p&gt;
 <junction x="15.24" y="63.5"/>
 <junction x="15.24" y="86.36"/>
 <junction x="27.94" y="86.36"/>
-<junction x="0" y="86.36"/>
 <wire x1="63.5" y1="86.36" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="0" y1="86.36" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="86.36" x2="-5.08" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="SERVO" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="73.66" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="71.12" x2="-7.62" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="86.36" x2="-5.08" y2="73.66" width="0.1524" layer="91"/>
 <junction x="45.72" y="88.9"/>
-<junction x="-7.62" y="71.12"/>
 <junction x="27.94" y="58.42"/>
 <junction x="27.94" y="81.28"/>
 <junction x="7.62" y="81.28"/>
@@ -4501,9 +4497,12 @@ W = angled&lt;p&gt;
 <junction x="91.44" y="58.42"/>
 <junction x="91.44" y="81.28"/>
 <junction x="71.12" y="81.28"/>
-<junction x="-5.08" y="73.66"/>
-<wire x1="-5.08" y1="73.66" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
-<junction x="-5.08" y="86.36"/>
+<pinref part="SERVO" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="71.12" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="86.36" x2="0" y2="86.36" width="0.1524" layer="91"/>
+<junction x="0" y="86.36"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -4579,24 +4578,15 @@ W = angled&lt;p&gt;
 <wire x1="7.62" y1="48.26" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="DRV" gate="1" pin="3"/>
-<wire x1="35.56" y1="45.72" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="1" pin="S"/>
-<wire x1="27.94" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="71.12" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="DRV" gate="1" pin="5"/>
-<wire x1="38.1" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="43.18" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="45.72" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="33.02" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="DRV" gate="1" pin="4"/>
 <wire x1="60.96" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
 <junction x="35.56" y="45.72"/>
-<junction x="40.64" y="43.18"/>
 <junction x="40.64" y="45.72"/>
 <junction x="55.88" y="45.72"/>
-<junction x="27.94" y="71.12"/>
 <junction x="7.62" y="48.26"/>
 </segment>
 </net>
@@ -4604,7 +4594,7 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="LSM" gate="-1" pin="S"/>
 <wire x1="45.72" y1="137.16" x2="-93.98" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="X4" gate="-1" pin="S"/>
+<pinref part="SPRK_L" gate="-1" pin="S"/>
 <wire x1="-93.98" y1="132.08" x2="-76.2" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="137.16" x2="-93.98" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="X0" gate="-5" pin="S"/>
@@ -4618,7 +4608,7 @@ W = angled&lt;p&gt;
 <pinref part="LSM" gate="-2" pin="S"/>
 <wire x1="45.72" y1="134.62" x2="-78.74" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="134.62" x2="-78.74" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="X4" gate="-2" pin="S"/>
+<pinref part="SPRK_L" gate="-2" pin="S"/>
 <wire x1="-78.74" y1="129.54" x2="-76.2" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4647,13 +4637,13 @@ W = angled&lt;p&gt;
 <wire x1="20.32" y1="119.38" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="93.98" x2="-81.28" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="93.98" x2="-81.28" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="X4" gate="-11" pin="S"/>
+<pinref part="SPRK_L" gate="-11" pin="S"/>
 <wire x1="-81.28" y1="106.68" x2="-76.2" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="X4" gate="-12" pin="S"/>
+<pinref part="SPRK_L" gate="-12" pin="S"/>
 <wire x1="-76.2" y1="104.14" x2="-78.74" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="104.14" x2="-78.74" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="96.52" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
@@ -4664,140 +4654,155 @@ W = angled&lt;p&gt;
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="X4" gate="-10" pin="S"/>
-<pinref part="X6" gate="-1" pin="S"/>
+<pinref part="SPRK_L" gate="-10" pin="S"/>
+<pinref part="OPT_L" gate="-1" pin="S"/>
 <wire x1="-81.28" y1="109.22" x2="-76.2" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="X4" gate="-9" pin="S"/>
-<pinref part="X6" gate="-2" pin="S"/>
+<pinref part="SPRK_L" gate="-9" pin="S"/>
+<pinref part="OPT_L" gate="-2" pin="S"/>
 <wire x1="-81.28" y1="111.76" x2="-76.2" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="X4" gate="-8" pin="S"/>
-<pinref part="X6" gate="-3" pin="S"/>
+<pinref part="SPRK_L" gate="-8" pin="S"/>
+<pinref part="OPT_L" gate="-3" pin="S"/>
 <wire x1="-81.28" y1="114.3" x2="-76.2" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="X4" gate="-7" pin="S"/>
-<pinref part="X6" gate="-4" pin="S"/>
+<pinref part="SPRK_L" gate="-7" pin="S"/>
+<pinref part="OPT_L" gate="-4" pin="S"/>
 <wire x1="-81.28" y1="116.84" x2="-76.2" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="X4" gate="-6" pin="S"/>
-<pinref part="X6" gate="-5" pin="S"/>
+<pinref part="SPRK_L" gate="-6" pin="S"/>
+<pinref part="OPT_L" gate="-5" pin="S"/>
 <wire x1="-81.28" y1="119.38" x2="-76.2" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="X4" gate="-5" pin="S"/>
-<pinref part="X6" gate="-6" pin="S"/>
+<pinref part="SPRK_L" gate="-5" pin="S"/>
+<pinref part="OPT_L" gate="-6" pin="S"/>
 <wire x1="-81.28" y1="121.92" x2="-76.2" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="X4" gate="-4" pin="S"/>
-<pinref part="X6" gate="-7" pin="S"/>
+<pinref part="SPRK_L" gate="-4" pin="S"/>
+<pinref part="OPT_L" gate="-7" pin="S"/>
 <wire x1="-81.28" y1="124.46" x2="-76.2" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="X4" gate="-3" pin="S"/>
-<pinref part="X6" gate="-8" pin="S"/>
+<pinref part="SPRK_L" gate="-3" pin="S"/>
+<pinref part="OPT_L" gate="-8" pin="S"/>
 <wire x1="-81.28" y1="127" x2="-76.2" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="X5" gate="-1" pin="S"/>
-<pinref part="X2" gate="-11" pin="S"/>
+<pinref part="SPRK_R" gate="-1" pin="S"/>
+<pinref part="OPT_R" gate="-11" pin="S"/>
 <wire x1="-48.26" y1="104.14" x2="-40.64" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="X5" gate="-2" pin="S"/>
-<pinref part="X2" gate="-10" pin="S"/>
+<pinref part="SPRK_R" gate="-2" pin="S"/>
+<pinref part="OPT_R" gate="-10" pin="S"/>
 <wire x1="-48.26" y1="106.68" x2="-40.64" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="X5" gate="-3" pin="S"/>
-<pinref part="X2" gate="-9" pin="S"/>
+<pinref part="SPRK_R" gate="-3" pin="S"/>
+<pinref part="OPT_R" gate="-9" pin="S"/>
 <wire x1="-48.26" y1="109.22" x2="-40.64" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="X5" gate="-4" pin="S"/>
-<pinref part="X2" gate="-8" pin="S"/>
+<pinref part="SPRK_R" gate="-4" pin="S"/>
+<pinref part="OPT_R" gate="-8" pin="S"/>
 <wire x1="-48.26" y1="111.76" x2="-40.64" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="X5" gate="-5" pin="S"/>
-<pinref part="X2" gate="-7" pin="S"/>
+<pinref part="SPRK_R" gate="-5" pin="S"/>
+<pinref part="OPT_R" gate="-7" pin="S"/>
 <wire x1="-48.26" y1="114.3" x2="-40.64" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="X5" gate="-6" pin="S"/>
-<pinref part="X2" gate="-6" pin="S"/>
+<pinref part="SPRK_R" gate="-6" pin="S"/>
+<pinref part="OPT_R" gate="-6" pin="S"/>
 <wire x1="-48.26" y1="116.84" x2="-40.64" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="X5" gate="-7" pin="S"/>
-<pinref part="X2" gate="-5" pin="S"/>
+<pinref part="SPRK_R" gate="-7" pin="S"/>
+<pinref part="OPT_R" gate="-5" pin="S"/>
 <wire x1="-48.26" y1="119.38" x2="-40.64" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<pinref part="X5" gate="-8" pin="S"/>
-<pinref part="X2" gate="-4" pin="S"/>
+<pinref part="SPRK_R" gate="-8" pin="S"/>
+<pinref part="OPT_R" gate="-4" pin="S"/>
 <wire x1="-48.26" y1="121.92" x2="-40.64" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
-<pinref part="X5" gate="-9" pin="S"/>
-<pinref part="X2" gate="-3" pin="S"/>
+<pinref part="SPRK_R" gate="-9" pin="S"/>
+<pinref part="OPT_R" gate="-3" pin="S"/>
 <wire x1="-48.26" y1="124.46" x2="-40.64" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="X5" gate="-10" pin="S"/>
-<pinref part="X2" gate="-2" pin="S"/>
+<pinref part="SPRK_R" gate="-10" pin="S"/>
+<pinref part="OPT_R" gate="-2" pin="S"/>
 <wire x1="-48.26" y1="127" x2="-40.64" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="X5" gate="-11" pin="S"/>
-<pinref part="X2" gate="-1" pin="S"/>
+<pinref part="SPRK_R" gate="-11" pin="S"/>
+<pinref part="OPT_R" gate="-1" pin="S"/>
 <wire x1="-48.26" y1="129.54" x2="-40.64" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="Q2" gate="1" pin="S"/>
+<wire x1="27.94" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="71.12" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="DRV" gate="1" pin="6"/>
+<wire x1="58.42" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,45.72,129.54,LSM-4,S,,,,"/>
+<approved hash="101,1,45.72,127,LSM-5,S,,,,"/>
+<approved hash="101,1,45.72,124.46,LSM-6,S,,,,"/>
+<approved hash="101,1,45.72,116.84,LSM-9,S,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
