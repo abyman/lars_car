@@ -65,6 +65,7 @@
 <circle x="5.08" y="73.4568" radius="1.3716" width="0.254" layer="20"/>
 <circle x="108.966" y="71.0184" radius="1.3716" width="0.254" layer="20"/>
 <circle x="108.966" y="7.5184" radius="1.3716" width="0.254" layer="20"/>
+<dimension x1="114.808" y1="0" x2="0" y2="0" x3="57.404" y3="-9.144" textsize="1.778" layer="20"/>
 </plain>
 <libraries>
 <library name="con-lstb">

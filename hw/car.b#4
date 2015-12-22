@@ -1530,11 +1530,11 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="LSM" library="con-molex" package="22-23-2111" value="22-23-2111" x="49.022" y="9.144" rot="R180">
-<attribute name="OC_NEWARK" value="27C9916" x="49.022" y="9.144" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="22-23-2111" x="49.022" y="9.144" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="MOLEX" x="49.022" y="9.144" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="5388879" x="49.022" y="9.144" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="LSM" library="con-molex" package="22-23-2111" value="22-23-2111" x="49.022" y="12.7" rot="R180">
+<attribute name="OC_NEWARK" value="27C9916" x="49.022" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="22-23-2111" x="49.022" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="MOLEX" x="49.022" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="5388879" x="49.022" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="Q1" library="transistor-small-signal" package="SOT54E" value="BS170" x="65.278" y="70.612"/>
 <element name="Q3" library="transistor-small-signal" package="SOT54E" value="BS170" x="75.692" y="71.628" rot="R270"/>
@@ -1643,7 +1643,7 @@ design rules under a new name.</description>
 <contactref element="RF-" pad="1"/>
 <contactref element="RR-" pad="1"/>
 <wire x1="98.298" y1="40.386" x2="98.298" y2="42.926" width="0" layer="19" extent="1-1"/>
-<wire x1="56.642" y1="9.144" x2="98.298" y2="40.386" width="0" layer="19" extent="1-1"/>
+<wire x1="56.642" y1="12.7" x2="98.298" y2="40.386" width="0" layer="19" extent="1-1"/>
 <wire x1="61.468" y1="64.77" x2="98.298" y2="42.926" width="0" layer="19" extent="1-1"/>
 <wire x1="30.988" y1="73.406" x2="61.468" y2="64.77" width="0" layer="19" extent="1-1"/>
 <wire x1="22.86" y1="73.406" x2="30.988" y2="73.406" width="0" layer="19" extent="1-1"/>
@@ -1725,43 +1725,43 @@ design rules under a new name.</description>
 <contactref element="X0" pad="5"/>
 <contactref element="LSM" pad="1"/>
 <contactref element="SPRK_L" pad="1"/>
-<wire x1="61.722" y1="9.144" x2="98.298" y2="50.546" width="0" layer="19" extent="1-1"/>
-<wire x1="5.334" y1="35.052" x2="61.722" y2="9.144" width="0" layer="19" extent="1-1"/>
+<wire x1="61.722" y1="12.7" x2="98.298" y2="50.546" width="0" layer="19" extent="1-1"/>
+<wire x1="5.334" y1="35.052" x2="61.722" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="1V8" class="1">
 <contactref element="LSM" pad="2"/>
 <contactref element="SPRK_L" pad="2"/>
-<wire x1="7.874" y1="35.052" x2="59.182" y2="9.144" width="0" layer="19" extent="1-1"/>
+<wire x1="7.874" y1="35.052" x2="59.182" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="X0" pad="4"/>
 <contactref element="LSM" pad="10"/>
-<wire x1="38.862" y1="9.144" x2="98.298" y2="48.006" width="0" layer="19" extent="1-1"/>
+<wire x1="38.862" y1="12.7" x2="98.298" y2="48.006" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="X0" pad="3"/>
 <contactref element="LSM" pad="11"/>
-<wire x1="36.322" y1="9.144" x2="98.298" y2="45.466" width="0" layer="19" extent="1-1"/>
+<wire x1="36.322" y1="12.7" x2="98.298" y2="45.466" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="LSM" pad="8"/>
 <contactref element="SPRK_L" pad="11"/>
-<wire x1="30.734" y1="35.052" x2="43.942" y2="9.144" width="0" layer="19" extent="1-1"/>
+<wire x1="30.734" y1="35.052" x2="43.942" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="SPRK_L" pad="12"/>
 <contactref element="LSM" pad="7"/>
-<wire x1="33.274" y1="35.052" x2="46.482" y2="9.144" width="0" layer="19" extent="1-1"/>
+<wire x1="33.274" y1="35.052" x2="46.482" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$38">
 <contactref element="SPRK_R" pad="9"/>
 <contactref element="LSM" pad="6"/>
-<wire x1="12.954" y1="45.212" x2="49.022" y2="9.144" width="0" layer="19" extent="1-1"/>
+<wire x1="12.954" y1="45.212" x2="49.022" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$39">
 <contactref element="SPRK_R" pad="10"/>
 <contactref element="LSM" pad="5"/>
-<wire x1="10.414" y1="45.212" x2="51.562" y2="9.144" width="0" layer="19" extent="1-1"/>
+<wire x1="10.414" y1="45.212" x2="51.562" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="Q3" pad="S"/>

@@ -57,22 +57,14 @@
 </layers>
 <board>
 <plain>
-<circle x="97.282" y="2.286" radius="0.762" width="0" layer="20"/>
-<wire x1="99.06" y1="0.508" x2="37.846" y2="0.508" width="0" layer="20"/>
-<wire x1="37.846" y1="0.508" x2="37.846" y2="34.036" width="0" layer="20"/>
-<wire x1="37.846" y1="34.036" x2="10.922" y2="34.036" width="0" layer="20"/>
-<wire x1="10.922" y1="34.036" x2="10.922" y2="81.026" width="0" layer="20"/>
-<wire x1="10.922" y1="81.026" x2="99.06" y2="81.026" width="0" layer="20"/>
-<wire x1="99.06" y1="81.026" x2="99.06" y2="0.508" width="0" layer="20"/>
-<circle x="97.282" y="79.248" radius="0.762" width="0" layer="20"/>
-<circle x="12.7" y="79.248" radius="0.762" width="0" layer="20"/>
-<circle x="12.7" y="35.814" radius="0.762" width="0" layer="20"/>
-<circle x="39.624" y="2.286" radius="0.762" width="0" layer="20"/>
-<hole x="39.624" y="2.286" drill="0.8"/>
-<hole x="12.7" y="35.814" drill="0.8"/>
-<hole x="12.7" y="79.248" drill="0.8"/>
-<hole x="97.282" y="79.248" drill="0.8"/>
-<hole x="97.282" y="2.286" drill="0.8"/>
+<wire x1="114.808" y1="0" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="0" y2="81.026" width="0" layer="20"/>
+<wire x1="0" y1="81.026" x2="114.808" y2="81.026" width="0" layer="20"/>
+<wire x1="114.808" y1="81.026" x2="114.808" y2="0" width="0" layer="20"/>
+<circle x="5.08" y="5.08" radius="1.3716" width="0.254" layer="20"/>
+<circle x="5.08" y="73.4568" radius="1.3716" width="0.254" layer="20"/>
+<circle x="108.966" y="71.0184" radius="1.3716" width="0.254" layer="20"/>
+<circle x="108.966" y="7.5184" radius="1.3716" width="0.254" layer="20"/>
 </plain>
 <libraries>
 <library name="con-lstb">
